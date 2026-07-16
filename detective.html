@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>로키 세팅 · 미션 1. 로키 탐정 사무소</title>
+<style>
+  :root{--green:#1E7A46;--greenD:#155c34;--cream:#F7F3E8;--ink:#173a26;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;}
+  .wrap{max-width:640px;margin:0 auto;padding:20px 16px 60px;}
+  .badge{display:inline-block;background:var(--green);color:#fff;font-size:13px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px;}
+  h1{font-size:22px;margin:14px 0 4px;color:var(--greenD);}
+  .sub{font-size:14px;color:#5a6b60;margin:0 0 18px;}
+  .box{background:#fff;border:2px solid var(--green);border-radius:14px;padding:18px 16px;font-size:15px;word-break:keep-all;}
+  .box .line{margin:0 0 9px;} .box .line:last-child{margin-bottom:0;}
+  .intro{font-weight:700;color:var(--greenD);}
+  .btn{display:block;width:100%;margin-top:16px;padding:16px;font-size:18px;font-weight:800;color:#fff;background:var(--green);border:none;border-radius:14px;cursor:pointer;transition:.15s;}
+  .btn:active{transform:scale(.98);background:var(--greenD);} .btn.done{background:#c98a2e;}
+  .step{margin-top:14px;font-size:14px;color:var(--ink);background:#fff;border:1px dashed #bcd8c6;border-radius:10px;padding:12px 14px;}
+  .step b{color:var(--greenD);}
+  .note{margin-top:12px;font-size:13px;color:#5a6b60;background:#eef6f0;border-radius:10px;padding:12px 14px;}
+  .note b{color:var(--greenD);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="badge">🤖 로키 세팅</span>
+  <h1>미션 1. 로키 탐정 사무소</h1>
+  <p class="sub">아래 <b>복사하기</b>를 누른 뒤, 아이의 AI 앱에 붙여넣으세요.</p>
+  <div class="box" id="box"><p class="line intro">지금부터 너의 이름은 &#x27;로키&#x27;야. 우리 아이랑 탐정 놀이를 할 거야. 아이가 물어보면 아래 규칙대로 역할을 해줘.</p><p class="line">[사건] 아빠 자동차 키가 거실 테이블에서 사라졌다. 용의자는 엄마, 동생, 아이 본인.</p><p class="line">[진짜 정답] 아빠가 무거운 짐을 신발장 옆 수납장에 올릴 때, 차 키도 그 위에 함께 뒀다. (동생 장난감은 헷갈리게 하는 함정 단서)</p><p class="line">[아빠 역할] &quot;어제 마트에서 짐을 잔뜩 사왔어. 양손이 무거워서 들어오자마자 짐부터 내려놨는데 정신이 없었어.&quot; — 수납장을 직접 말하지 말고 힌트만.</p><p class="line">[동생 역할] &quot;나는 미니카 장난감만 가지고 놀았어! 아빠 키는 안 만졌어.&quot; — 동생은 범인이 아님.</p><p class="line">[엄마 역할] &quot;거실 정리는 안 했어. 근데 아빠가 짐을 잔뜩 들고 들어오던 건 봤지.&quot; — 짐 쪽으로 방향을 살짝.</p><p class="line">[추리 코치 규칙] 아이가 추리를 말하면, 맞으면 &quot;딩동댕! 어떻게 알았어?&quot; 하고 축하해 줘. 틀리면 정답을 말하지 말고 &quot;그 단서 말고 다른 단서도 다시 볼까?&quot; 하고 힌트만 줘.</p><p class="line">이해했으면, &quot;내 이름은 로키야! 자, 아빠 자동차 키 실종 사건을 우리가 같이 풀어보자!&quot;처럼 이름을 밝히며 신나게 인사하고, 아이에게 첫 단서를 살펴볼지 물어봐 줘.</p></div>
+  <button class="btn" id="copyBtn">📋 복사하기</button>
+  <div class="step">복사한 뒤, <b>아이의 제미나이 앱</b>(부모님이 Family&nbsp;Link로 승인한 <b>자녀 계정</b>)을 열어 붙여넣으세요. 챗지피티 등 다른 AI를 쓰신다면, 그 앱에 붙여넣으면 돼요.</div>
+  <div class="note">붙여넣으면 AI가 <b>&lsquo;로키&rsquo;</b>가 되어 <b>&ldquo;내 이름은 로키야!&rdquo;</b> 하고 먼저 인사하며 놀이를 시작합니다.</div>
+</div>
+<script>
+  var raw = "지금부터 너의 이름은 '로키'야. 우리 아이랑 탐정 놀이를 할 거야. 아이가 물어보면 아래 규칙대로 역할을 해줘.\n[사건] 아빠 자동차 키가 거실 테이블에서 사라졌다. 용의자는 엄마, 동생, 아이 본인.\n[진짜 정답] 아빠가 무거운 짐을 신발장 옆 수납장에 올릴 때, 차 키도 그 위에 함께 뒀다. (동생 장난감은 헷갈리게 하는 함정 단서)\n[아빠 역할] \"어제 마트에서 짐을 잔뜩 사왔어. 양손이 무거워서 들어오자마자 짐부터 내려놨는데 정신이 없었어.\" — 수납장을 직접 말하지 말고 힌트만.\n[동생 역할] \"나는 미니카 장난감만 가지고 놀았어! 아빠 키는 안 만졌어.\" — 동생은 범인이 아님.\n[엄마 역할] \"거실 정리는 안 했어. 근데 아빠가 짐을 잔뜩 들고 들어오던 건 봤지.\" — 짐 쪽으로 방향을 살짝.\n[추리 코치 규칙] 아이가 추리를 말하면, 맞으면 \"딩동댕! 어떻게 알았어?\" 하고 축하해 줘. 틀리면 정답을 말하지 말고 \"그 단서 말고 다른 단서도 다시 볼까?\" 하고 힌트만 줘.\n이해했으면, \"내 이름은 로키야! 자, 아빠 자동차 키 실종 사건을 우리가 같이 풀어보자!\"처럼 이름을 밝히며 신나게 인사하고, 아이에게 첫 단서를 살펴볼지 물어봐 줘.";
+  var btn=document.getElementById('copyBtn');
+  btn.addEventListener('click',function(){
+    navigator.clipboard.writeText(raw).then(function(){
+      btn.textContent='✅ 복사됐어요! 붙여넣으세요'; btn.classList.add('done');
+      setTimeout(function(){btn.textContent='📋 복사하기'; btn.classList.remove('done');},2500);
+    },function(){
+      var r=document.createRange(); r.selectNodeContents(document.getElementById('box'));
+      var s=window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      btn.textContent='길게 눌러 복사하세요';
+    });
+  });
+</script>
+</body>
+</html>
