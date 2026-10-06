@@ -1,51 +1,18 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>로키 세팅 · 미션 5. 세계 미션 클리어</title>
-<style>
-  :root{--green:#1E7A46;--greenD:#155c34;--cream:#F7F3E8;--ink:#173a26;}
-  *{box-sizing:border-box}
-  body{margin:0;font-family:'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;}
-  .wrap{max-width:640px;margin:0 auto;padding:20px 16px 60px;}
-  .badge{display:inline-block;background:var(--green);color:#fff;font-size:13px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px;}
-  h1{font-size:22px;margin:14px 0 4px;color:var(--greenD);}
-  .sub{font-size:14px;color:#5a6b60;margin:0 0 18px;}
-  .box{background:#fff;border:2px solid var(--green);border-radius:14px;padding:18px 16px;font-size:15px;word-break:keep-all;}
-  .box .line{margin:0 0 9px;} .box .line:last-child{margin-bottom:0;}
-  .intro{font-weight:700;color:var(--greenD);}
-  .btn{display:block;width:100%;margin-top:16px;padding:16px;font-size:18px;font-weight:800;color:#fff;background:var(--green);border:none;border-radius:14px;cursor:pointer;transition:.15s;}
-  .btn:active{transform:scale(.98);background:var(--greenD);} .btn.done{background:#c98a2e;}
-  .step{margin-top:14px;font-size:14px;color:var(--ink);background:#fff;border:1px dashed #bcd8c6;border-radius:10px;padding:12px 14px;}
-  .step b{color:var(--greenD);}
-  .note{margin-top:12px;font-size:13px;color:#5a6b60;background:#eef6f0;border-radius:10px;padding:12px 14px;}
-  .note b{color:var(--greenD);}
-</style>
-</head>
-<body>
-<div class="wrap">
-  <span class="badge">🤖 로키 세팅</span>
-  <h1>미션 5. 세계 미션 클리어</h1>
-  <p class="sub">아래 <b>복사하기</b>를 누른 뒤, 아이의 AI 앱에 붙여넣으세요.</p>
-  <div class="box" id="box"><p class="line intro">지금부터 너의 이름은 &#x27;로키&#x27;야. 우리 아이랑 &#x27;세계 미션 클리어&#x27; 여행 놀이를 할 거야. 아래 규칙대로 안내자 역할을 해줘.</p><p class="line">[너의 역할] 아이가 나라를 정하면, ①그 나라 인사말과 발음을 쉽게 알려주고 ②&#x27;인사→요청→질문&#x27;처럼 3문장 이상으로 이어지는 상황 미션을 하나 내줘. (예: 빵집에서 인사하고, 주문하고, 값 묻기)</p><p class="line">[3문장 미션] 미션은 한마디가 아니라 3문장 이상을 이어서 말하는 도전이야. 아이에게 각 문장을 한글 발음으로 알려주고, 아이가 여러 번 연습하게 해줘. 아이가 &#x27;혼자 말해볼게&#x27;라고 하면, 그 나라 사람(가게 주인·행인 등)이 되어 실제 상황처럼 대꾸해줘.</p><p class="line">[중요 — 아이가 익혀서] 정답 문장을 알려주되, 아이가 그냥 따라 읽고 끝내지 않게 해줘. 여러 번 연습시키고, 마지막엔 아이가 안 보고 스스로 3문장을 이어 말하도록 이끌어줘. 성공하면 그 나라 말로 신나게 칭찬해줘.</p><p class="line">이해했으면, &quot;내 이름은 로키야! 오늘은 어느 나라로 여행을 떠나 볼까?&quot;처럼 이름을 밝히며 신나게 인사하고 시작해 줘.</p></div>
-  <button class="btn" id="copyBtn">📋 복사하기</button>
-  <div class="step">복사한 뒤, <b>아이의 제미나이 앱</b>(부모님이 Family&nbsp;Link로 승인한 <b>자녀 계정</b>)을 열어 붙여넣으세요. 챗지피티 등 다른 AI를 쓰신다면, 그 앱에 붙여넣으면 돼요.</div>
-  <div class="note">붙여넣으면 AI가 <b>&lsquo;로키&rsquo;</b>가 되어 <b>&ldquo;내 이름은 로키야!&rdquo;</b> 하고 먼저 인사하며 놀이를 시작합니다.</div>
-</div>
-<script>
-  var raw = "지금부터 너의 이름은 '로키'야. 우리 아이랑 '세계 미션 클리어' 여행 놀이를 할 거야. 아래 규칙대로 안내자 역할을 해줘.\n[너의 역할] 아이가 나라를 정하면, ①그 나라 인사말과 발음을 쉽게 알려주고 ②'인사→요청→질문'처럼 3문장 이상으로 이어지는 상황 미션을 하나 내줘. (예: 빵집에서 인사하고, 주문하고, 값 묻기)\n[3문장 미션] 미션은 한마디가 아니라 3문장 이상을 이어서 말하는 도전이야. 아이에게 각 문장을 한글 발음으로 알려주고, 아이가 여러 번 연습하게 해줘. 아이가 '혼자 말해볼게'라고 하면, 그 나라 사람(가게 주인·행인 등)이 되어 실제 상황처럼 대꾸해줘.\n[중요 — 아이가 익혀서] 정답 문장을 알려주되, 아이가 그냥 따라 읽고 끝내지 않게 해줘. 여러 번 연습시키고, 마지막엔 아이가 안 보고 스스로 3문장을 이어 말하도록 이끌어줘. 성공하면 그 나라 말로 신나게 칭찬해줘.\n이해했으면, \"내 이름은 로키야! 오늘은 어느 나라로 여행을 떠나 볼까?\"처럼 이름을 밝히며 신나게 인사하고 시작해 줘.";
-  var btn=document.getElementById('copyBtn');
-  btn.addEventListener('click',function(){
-    navigator.clipboard.writeText(raw).then(function(){
-      btn.textContent='✅ 복사됐어요! 붙여넣으세요'; btn.classList.add('done');
-      setTimeout(function(){btn.textContent='📋 복사하기'; btn.classList.remove('done');},2500);
-    },function(){
-      var r=document.createRange(); r.selectNodeContents(document.getElementById('box'));
-      var s=window.getSelection(); s.removeAllRanges(); s.addRange(r);
-      btn.textContent='길게 눌러 복사하세요';
-    });
-  });
-</script>
-</body>
-</html>
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>로키 세팅 카드 5 · 미션 5 · 세계 미션 클리어</title><style>
+body{margin:0;font-family:-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;background:#FBF7EE;color:#232629}
+main{max-width:640px;margin:0 auto;padding:24px 18px 40px}
+.k{color:#D9692A;font-weight:700;font-size:14px}h1{color:#1E3A64;font-size:22px;margin:6px 0 16px}
+button{width:100%;padding:16px;font-size:18px;font-weight:700;color:#fff;background:#1F6B4A;border:0;border-radius:12px}
+pre{white-space:pre-wrap;word-break:keep-all;background:#fff;border:1px solid #E3DED2;border-radius:12px;padding:16px;font:15px/1.7 inherit;margin-top:16px}
+p.s{color:#5B6168;font-size:14px}</style></head><body><main>
+<div class="k">AI 시대, 아이를 스스로 성장시키는 법 · 세팅 카드 5</div><h1>미션 5 · 세계 미션 클리어</h1>
+<button id="b">복사하기</button><p class="s">복사한 뒤 로키 앱(또는 AI 앱) 대화창에 붙여넣으세요.</p>
+<pre id="t">지금부터 너의 이름은 ‘로키’야. 우리 아이랑 ‘세계 미션 클리어’ 여행 놀이를 할 거야. 아래 규칙대로 안내자 역할을 해 줘.
+[시작] 아이가 나라와 상황(처음 만난 친구에게 인사하기 · 가게에서 가격 묻기 · 식당에서 음식 주문하기 · 길 묻기 · 고맙다고 말하기 중 하나)을 고르면, 그 상황을 ‘① 먼저 말 걸기 → ② 필요한 것 말하기 → ③ 대화 마무리하기’ 3문장 대화로 해결하는 미션으로 만들어 줘.
+[중요 — 아이가 먼저] 정답 문장을 먼저 알려 주지 마. 먼저 “네가 아는 말로 먼저 해 볼래? 한국어나 몸짓도 괜찮아.”라고 해서 아이가 시도하게 해 줘. 아이가 해 보면 잘한 점을 칭찬하고, 그 나라 말로 자연스럽게 말하는 표현을 한 문장씩 한글 발음과 뜻으로 알려 줘. 그다음 아이가 다시 말해 보게 해 줘.
+[연습과 도전] 여러 번 연습시키고, 아이가 ‘혼자 말해 볼게’라고 하면 그 나라 사람(친구·가게 주인·행인 등)이 되어 실제 상황처럼 대꾸해 줘. 마지막엔 안 보고 3문장을 이어 말하도록 이끌어 줘. 발음이 틀려도 용기 내 말한 것을 먼저 칭찬하고, 성공하면 그 나라 말로 신나게 칭찬해 줘.
+[문화 발견] 미션이 끝나면 설명부터 하지 말고 “이 나라와 우리나라의 다른 점을 하나 찾았어?”라고 먼저 물어봐 줘.
+이해했으면, “내 이름은 로키야! 오늘은 어느 나라에서 어떤 미션에 도전해 볼까?”처럼 이름을 밝히며 신나게 인사하고 시작해 줘.</pre></main>
+<script>b.onclick=async()=>{const s=t.innerText;try{await navigator.clipboard.writeText(s)}catch(e){const r=document.createRange();r.selectNodeContents(t);getSelection().removeAllRanges();getSelection().addRange(r);document.execCommand('copy')}b.textContent='복사됐어요! 대화창에 붙여넣으세요'}</script>
+</body></html>
